@@ -1,0 +1,294 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>B.Tech in Information Technology — Department of IT</title>
+  <meta name="description" content="B.Tech in IT — program overview, curriculum, admission, faculty, and contact." />
+  <link rel="icon" href="data:;base64,iVBORw0KGgo=" />
+  <style>
+    /* Basic reset */
+    ,::before,*::after{box-sizing:border-box}
+    html,body{height:100%}
+    body{margin:0;font-family:Inter, ui-sans-serif, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;line-height:1.5;color:#0f172a;background:linear-gradient(180deg,#f8fafc 0%,#ffffff 100%)}
+
+    /* Container */
+    .container{max-width:1100px;margin:0 auto;padding:24px}
+
+    /* Header */
+    header{display:flex;align-items:center;justify-content:space-between;padding:12px 0}
+    .brand{display:flex;gap:12px;align-items:center}
+    .logo{width:56px;height:56px;border-radius:10px;background:linear-gradient(135deg,#0ea5e9,#7c3aed);display:flex;align-items:center;justify-content:center;color:white;font-weight:700;font-size:18px}
+    nav ul{list-style:none;display:flex;gap:18px;margin:0;padding:0}
+    nav a{color:#0f172a;text-decoration:none;font-weight:600}
+    .cta{background:#0ea5e9;color:white;padding:8px 14px;border-radius:8px;text-decoration:none;font-weight:700}
+
+    /* Hero */
+    .hero{display:grid;grid-template-columns:1fr;gap:24px;align-items:center;padding:36px 0}
+    .hero h1{font-size:32px;margin:0;color:#0f172a}
+    .hero p{color:#334155;margin-top:8px}
+    .hero .hero-actions{margin-top:18px;display:flex;gap:12px}
+    .btn{padding:10px 16px;border-radius:8px;text-decoration:none;font-weight:700}
+    .btn-primary{background:#0ea5e9;color:white}
+    .btn-outline{background:transparent;border:2px solid #cbd5e1;color:#0f172a}
+
+    /* Grid sections */
+    .grid{display:grid;gap:18px}
+    .cards{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:18px}
+    .card{background:white;border-radius:12px;padding:18px;box-shadow:0 6px 18px rgba(15,23,42,0.06)}
+    .card h3{margin:0 0 8px 0}
+    .muted{color:#64748b;font-size:14px}
+
+    /* Curriculum */
+    .curriculum ul{padding-left:18px}
+
+    /* Faculty */
+    .faculty{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:18px}
+    .avatar{width:72px;height:72px;border-radius:12px;background:#eef2ff;display:inline-grid;place-items:center;font-weight:700}
+
+    /* Contact */
+    form{display:grid;gap:12px}
+    input,textarea,select{padding:10px;border-radius:8px;border:1px solid #e6e9ef;font-size:15px}
+    textarea{min-height:110px}
+
+    /* Footer */
+    footer{margin-top:36px;padding:24px 0;color:#64748b;border-top:1px solid #e6eef9}
+
+    /* Responsive nav (small screens) */
+    .menu-toggle{display:none}
+    @media (max-width:760px){
+      .hero{grid-template-columns:1fr}
+      nav ul{display:none}
+      .menu-toggle{display:inline-block;border:0;background:transparent;font-weight:700}
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <div class="brand">
+        <div class="logo">IT</div>
+        <div>
+          <div style="font-weight:800">B.Tech in Information Technology</div>
+          <div class="muted" style="font-size:13px">Department of Computer Science & IT</div>
+        </div>
+      </div>
+
+      <div>
+        <button class="menu-toggle" aria-expanded="false" id="menuToggle">Menu</button>
+        <nav aria-label="Main navigation">
+          <ul id="navList">
+            <li><a href="#about">About</a></li>
+            <li><a href="#programs">Programs</a></li>
+            <li><a href="#curriculum">Curriculum</a></li>
+            <li><a href="#faculty">Faculty</a></li>
+            <li><a href="#admission">Admission</a></li>
+            <li><a class="cta" href="#contact">Apply</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <section class="hero" id="about">
+        <div>
+          <h1>Bachelor of Technology (B.Tech) in Information Technology</h1>
+          <p>Prepare for a fast-paced career designing, building, and securing modern information systems. Our B.Tech in IT blends software engineering, networking, cybersecurity, data systems, and project-based learning to produce industry-ready graduates.</p>
+
+          <div class="hero-actions">
+            <a class="btn btn-primary" href="#admission">Apply Now</a>
+            <a class="btn btn-outline" href="#curriculum">View Curriculum</a>
+          </div>
+
+          <div style="margin-top:18px;display:flex;gap:12px;flex-wrap:wrap">
+            <div class="card" style="display:inline-block;min-width:160px">
+              <strong>Duration</strong>
+              <div class="muted">4 years (full-time)</div>
+            </div>
+            <div class="card" style="display:inline-block;min-width:160px">
+              <strong>Mode</strong>
+              <div class="muted">On-campus / Hybrid</div>
+            </div>
+            <div class="card" style="display:inline-block;min-width:160px">
+              <strong>Intake</strong>
+              <div class="muted">September & February</div>
+            </div>
+          </div>
+        </div>
+
+        <div>
+          <img alt="IT illustration" src="data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='520' height='320'><rect width='100%' height='100%' fill='%23eef2ff'/><g transform='translate(30,20)'><rect x='0' y='0' rx='16' ry='16' width='460' height='280' fill='%23fff' stroke='%23e2e8f0'/><text x='28' y='48' font-size='20' fill='%237c3aed' font-family='Arial' font-weight='700'>Build the future with code</text><text x='28' y='86' font-size='14' fill='%23334755'>Software — Networks — Security — Data</text></g></svg>" style="max-width:100%;border-radius:12px;box-shadow:0 10px 30px rgba(2,6,23,0.06)" />
+        </div>
+      </section>
+
+      <section id="programs" class="grid" style="margin-top:22px">
+        <h2>Core Program Tracks</h2>
+        <div class="cards">
+          <article class="card">
+            <h3>Software Engineering</h3>
+            <p class="muted">Programming, software design, testing, DevOps, and cloud-native development.</p>
+          </article>
+          <article class="card">
+            <h3>Network & Systems</h3>
+            <p class="muted">Network design, administration, virtualization, and distributed systems.</p>
+          </article>
+          <article class="card">
+            <h3>Cybersecurity</h3>
+            <p class="muted">Security fundamentals, cryptography, forensics, and secure development practices.</p>
+          </article>
+          <article class="card">
+            <h3>Data & AI</h3>
+            <p class="muted">Databases, analytics, machine learning, and data engineering.</p>
+          </article>
+        </div>
+      </section>
+
+      <section id="curriculum" style="margin-top:26px">
+        <h2>Sample Curriculum</h2>
+        <div class="card curriculum">
+          <h3>Year 1</h3>
+          <ul>
+            <li>Introduction to Programming</li>
+            <li>Discrete Mathematics</li>
+            <li>Computer Systems & Architecture</li>
+            <li>Calculus & Statistics</li>
+            <li>Communication Skills</li>
+          </ul>
+
+          <h3>Year 2</h3>
+          <ul>
+            <li>Data Structures & Algorithms</li>
+            <li>Database Systems</li>
+            <li>Operating Systems</li>
+            <li>Computer Networks</li>
+            <li>Object-Oriented Design</li>
+          </ul>
+
+          <h3>Year 3</h3>
+          <ul>
+            <li>Software Engineering Project I</li>
+            <li>Web & Mobile Development</li>
+            <li>Cybersecurity Fundamentals</li>
+            <li>Machine Learning Basics</li>
+            <li>Electives / Internship</li>
+          </ul>
+
+          <h3>Year 4</h3>
+          <ul>
+            <li>Capstone Project</li>
+            <li>Advanced Topics (Cloud, Big Data, Security)</li>
+            <li>Professional Practice & Ethics</li>
+            <li>Industry Placement / Final Internship</li>
+          </ul>
+        </div>
+      </section>
+
+      <section id="faculty" style="margin-top:26px">
+        <h2>Faculty & Mentors</h2>
+        <div class="faculty">
+          <div class="card">
+            <div style="display:flex;gap:12px;align-items:center">
+              <div class="avatar">AS</div>
+              <div>
+                <strong>Dr. A. Sen</strong>
+                <div class="muted">Head of Department — Networks & Systems</div>
+              </div>
+            </div>
+            <p class="muted" style="margin-top:12px">Research: Distributed systems, edge computing. Email: asen@example.edu</p>
+          </div>
+
+          <div class="card">
+            <div style="display:flex;gap:12px;align-items:center">
+              <div class="avatar">RK</div>
+              <div>
+                <strong>Prof. R. Kumar</strong>
+                <div class="muted">Software Engineering</div>
+              </div>
+            </div>
+            <p class="muted" style="margin-top:12px">Research: Software reliability, DevOps. Email: rkumar@example.edu</p>
+          </div>
+
+          <div class="card">
+            <div style="display:flex;gap:12px;align-items:center">
+              <div class="avatar">LM</div>
+              <div>
+                <strong>Ms. L. Mubiru</strong>
+                <div class="muted">Cybersecurity Lecturer</div>
+              </div>
+            </div>
+            <p class="muted" style="margin-top:12px">Focus: Security education and student competitions. Email: lmubiru@example.edu</p>
+          </div>
+        </div>
+      </section>
+
+      <section id="admission" style="margin-top:26px">
+        <h2>Admission & How to Apply</h2>
+        <div class="card">
+          <p class="muted">Eligibility: High school diploma with strong mathematics; specific country/institution requirements may apply. International students should check visa and language requirements.</p>
+          <ol>
+            <li>Prepare transcripts, CV, and a statement of purpose.</li>
+            <li>Submit the online application and pay the application fee.</li>
+            <li>Attend interview (if required) and provide references.</li>
+            <li>Receive offer and confirm enrollment before the deadline.</li>
+          </ol>
+          <p class="muted"><strong>Scholarships:</strong> Merit- and need-based scholarships are available — check the scholarships page for details.</p>
+        </div>
+      </section>
+
+      <section id="contact" style="margin-top:26px">
+        <h2>Contact & Enquiries</h2>
+        <div style="display:grid;grid-template-columns:1fr 340px;gap:18px}">
+          <div class="card">
+            <h3>Get in touch</h3>
+            <p class="muted">For program enquiries, admissions, and industry partnerships please contact the department office.</p>
+            <p><strong>Office:</strong> Room 212, Tech Building</p>
+            <p><strong>Email:</strong> it-dept@example.edu</p>
+            <p><strong>Phone:</strong> +250 123 456 789</p>
+          </div>
+
+          <div class="card">
+            <h3>Apply / Ask a Question</h3>
+            <form onsubmit="event.preventDefault();alert('Thank you — we received your message!')">
+              <input type="text" name="name" placeholder="Full name" required />
+              <input type="email" name="email" placeholder="Email address" required />
+              <select name="inquiry">
+                <option>General enquiry</option>
+                <option>Admission</option>
+                <option>Scholarships</option>
+                <option>Industry partnership</option>
+              </select>
+              <textarea name="message" placeholder="Your message"></textarea>
+              <button type="submit" class="btn btn-primary">Send message</button>
+            </form>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <div style="display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap">
+        <div>
+          <strong>B.Tech in IT</strong>
+          <div class="muted">Department of Computer Science & IT — Empowering the next generation of technologists.</div>
+        </div>
+        <div class="muted">© <span id="year"></span> Department of IT</div>
+      </div>
+    </footer>
+  </div>
+
+  <script>
+    // set year
+    document.getElementById('year').textContent = new Date().getFullYear();
+
+    // simple mobile menu toggle
+    const toggle = document.getElementById('menuToggle');
+    const navList = document.getElementById('navList');
+    toggle?.addEventListener('click', ()=>{
+      const expanded = toggle.getAttribute('aria-expanded') === 'true';
+      toggle.setAttribute('aria-expanded', String(!expanded));
+      if(navList.style.display === 'block') navList.style.display = '';
+      else navList.style.display = 'block';
+    });
+  </script>
+</body>
+</html>
