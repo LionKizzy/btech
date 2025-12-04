@@ -8,6 +8,7 @@ $ErrorActionPreference = "Stop"
 # -----------------------------------
 # 1. Ensure Minikube is Running
 # -----------------------------------
+
 Write-Host "Checking Minikube status..." -ForegroundColor Cyan
 $mkStatus = minikube status | Select-String "Running"
 
