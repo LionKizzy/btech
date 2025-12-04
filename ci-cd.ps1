@@ -53,7 +53,7 @@ if (Test-Path "deployment.yaml") {
 }
 
 # -----------------------------------
-# 5. Apply Kubernetes YAML Files
+# 5. Apply Kubernetes YAML Files 5
 # -----------------------------------
 Write-Host "Applying Kubernetes files..." -ForegroundColor Cyan
 
