@@ -1,294 +1,708 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>B.Tech in Information Technology — Department of IT</title>
-  <meta name="description" content="B.Tech in IT — program overview, curriculum, admission, faculty, and contact." />
-  <link rel="icon" href="data:;base64,iVBORw0KGgo=" />
-  <style>
-    /* Basic reset */
-    ,::before,*::after{box-sizing:border-box}
-    html,body{height:100%}
-    body{margin:0;font-family:Inter, ui-sans-serif, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;line-height:1.5;color:#0f172a;background:linear-gradient(180deg,#f8fafc 0%,#ffffff 100%)}
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BIT Class 2025 - Bachelor of Information Technology</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
 
-    /* Container */
-    .container{max-width:1100px;margin:0 auto;padding:24px}
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, #1e3c72 0%, #2a5298 50%, #7e22ce 100%);
+            min-height: 100vh;
+        }
 
-    /* Header */
-    header{display:flex;align-items:center;justify-content:space-between;padding:12px 0}
-    .brand{display:flex;gap:12px;align-items:center}
-    .logo{width:56px;height:56px;border-radius:10px;background:linear-gradient(135deg,#0ea5e9,#7c3aed);display:flex;align-items:center;justify-content:center;color:white;font-weight:700;font-size:18px}
-    nav ul{list-style:none;display:flex;gap:18px;margin:0;padding:0}
-    nav a{color:#0f172a;text-decoration:none;font-weight:600}
-    .cta{background:#0ea5e9;color:white;padding:8px 14px;border-radius:8px;text-decoration:none;font-weight:700}
+        .container {
+            max-width: 1400px;
+            margin: 0 auto;
+            padding: 20px;
+        }
 
-    /* Hero */
-    .hero{display:grid;grid-template-columns:1fr;gap:24px;align-items:center;padding:36px 0}
-    .hero h1{font-size:32px;margin:0;color:#0f172a}
-    .hero p{color:#334155;margin-top:8px}
-    .hero .hero-actions{margin-top:18px;display:flex;gap:12px}
-    .btn{padding:10px 16px;border-radius:8px;text-decoration:none;font-weight:700}
-    .btn-primary{background:#0ea5e9;color:white}
-    .btn-outline{background:transparent;border:2px solid #cbd5e1;color:#0f172a}
+        header {
+            background: rgba(255, 255, 255, 0.98);
+            padding: 25px;
+            border-radius: 15px;
+            box-shadow: 0 8px 32px rgba(0, 0, 0, 0.2);
+            margin-bottom: 30px;
+        }
 
-    /* Grid sections */
-    .grid{display:grid;gap:18px}
-    .cards{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:18px}
-    .card{background:white;border-radius:12px;padding:18px;box-shadow:0 6px 18px rgba(15,23,42,0.06)}
-    .card h3{margin:0 0 8px 0}
-    .muted{color:#64748b;font-size:14px}
+        .header-content {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 20px;
+        }
 
-    /* Curriculum */
-    .curriculum ul{padding-left:18px}
+        .logo {
+            display: flex;
+            align-items: center;
+            gap: 15px;
+        }
 
-    /* Faculty */
-    .faculty{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:18px}
-    .avatar{width:72px;height:72px;border-radius:12px;background:#eef2ff;display:inline-grid;place-items:center;font-weight:700}
+        .logo-icon {
+            font-size: 50px;
+        }
 
-    /* Contact */
-    form{display:grid;gap:12px}
-    input,textarea,select{padding:10px;border-radius:8px;border:1px solid #e6e9ef;font-size:15px}
-    textarea{min-height:110px}
+        .logo h1 {
+            color: #1e3c72;
+            font-size: 28px;
+            margin-bottom: 5px;
+        }
 
-    /* Footer */
-    footer{margin-top:36px;padding:24px 0;color:#64748b;border-top:1px solid #e6eef9}
+        .logo p {
+            color: #666;
+            font-size: 14px;
+        }
 
-    /* Responsive nav (small screens) */
-    .menu-toggle{display:none}
-    @media (max-width:760px){
-      .hero{grid-template-columns:1fr}
-      nav ul{display:none}
-      .menu-toggle{display:inline-block;border:0;background:transparent;font-weight:700}
-    }
-  </style>
+        nav {
+            display: flex;
+            gap: 10px;
+            flex-wrap: wrap;
+        }
+
+        .nav-btn {
+            padding: 12px 24px;
+            background: linear-gradient(135deg, #1e3c72 0%, #7e22ce 100%);
+            color: white;
+            border: none;
+            border-radius: 8px;
+            cursor: pointer;
+            font-size: 15px;
+            font-weight: 600;
+            transition: all 0.3s ease;
+            box-shadow: 0 4px 15px rgba(30, 60, 114, 0.3);
+        }
+
+        .nav-btn:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 6px 20px rgba(30, 60, 114, 0.5);
+        }
+
+        .nav-btn.active {
+            background: linear-gradient(135deg, #7e22ce 0%, #1e3c72 100%);
+        }
+
+        .content {
+            background: rgba(255, 255, 255, 0.98);
+            padding: 30px;
+            border-radius: 15px;
+            box-shadow: 0 8px 32px rgba(0, 0, 0, 0.2);
+            min-height: 500px;
+        }
+
+        .section {
+            display: none;
+            animation: fadeIn 0.5s ease;
+        }
+
+        .section.active {
+            display: block;
+        }
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        h2 {
+            color: #1e3c72;
+            margin-bottom: 25px;
+            font-size: 32px;
+            border-bottom: 3px solid #7e22ce;
+            padding-bottom: 10px;
+        }
+
+        .hero-section {
+            text-align: center;
+            margin-bottom: 40px;
+        }
+
+        .hero-section img {
+            width: 100%;
+            max-width: 800px;
+            height: 400px;
+            object-fit: cover;
+            border-radius: 15px;
+            box-shadow: 0 8px 25px rgba(0, 0, 0, 0.2);
+            margin: 20px 0;
+        }
+
+        .stats-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 20px;
+            margin-bottom: 30px;
+        }
+
+        .stat-card {
+            background: linear-gradient(135deg, #1e3c72 0%, #7e22ce 100%);
+            color: white;
+            padding: 25px;
+            border-radius: 12px;
+            text-align: center;
+            box-shadow: 0 4px 15px rgba(30, 60, 114, 0.4);
+            transition: transform 0.3s ease;
+        }
+
+        .stat-card:hover {
+            transform: translateY(-5px);
+        }
+
+        .stat-card h3 {
+            font-size: 36px;
+            margin-bottom: 10px;
+        }
+
+        .stat-card p {
+            font-size: 16px;
+            opacity: 0.9;
+        }
+
+        .card-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 20px;
+            margin-top: 20px;
+        }
+
+        .card {
+            background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+            padding: 25px;
+            border-radius: 12px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+            transition: all 0.3s ease;
+        }
+
+        .card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+        }
+
+        .card h3 {
+            color: #7e22ce;
+            margin-bottom: 10px;
+            font-size: 20px;
+        }
+
+        .card p {
+            color: #555;
+            line-height: 1.6;
+        }
+
+        .student-card {
+            background: white;
+            padding: 20px;
+            border-radius: 12px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+            text-align: center;
+        }
+
+        .student-card img {
+            width: 120px;
+            height: 120px;
+            border-radius: 50%;
+            object-fit: cover;
+            margin-bottom: 15px;
+            border: 4px solid #7e22ce;
+        }
+
+        .student-card h4 {
+            color: #1e3c72;
+            margin-bottom: 5px;
+        }
+
+        .student-card p {
+            color: #666;
+            font-size: 14px;
+        }
+
+        .gallery {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+            margin-top: 20px;
+        }
+
+        .gallery-item {
+            position: relative;
+            overflow: hidden;
+            border-radius: 12px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+            cursor: pointer;
+            transition: transform 0.3s ease;
+        }
+
+        .gallery-item:hover {
+            transform: scale(1.05);
+        }
+
+        .gallery-item img {
+            width: 100%;
+            height: 250px;
+            object-fit: cover;
+            display: block;
+        }
+
+        .gallery-caption {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            background: linear-gradient(to top, rgba(0,0,0,0.8), transparent);
+            color: white;
+            padding: 15px;
+            font-size: 14px;
+        }
+
+        .project-card {
+            background: white;
+            padding: 25px;
+            border-radius: 12px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+            margin-bottom: 20px;
+        }
+
+        .project-card h3 {
+            color: #1e3c72;
+            margin-bottom: 10px;
+        }
+
+        .project-card .tech-stack {
+            display: flex;
+            gap: 10px;
+            flex-wrap: wrap;
+            margin-top: 15px;
+        }
+
+        .tech-badge {
+            background: linear-gradient(135deg, #1e3c72 0%, #7e22ce 100%);
+            color: white;
+            padding: 5px 15px;
+            border-radius: 20px;
+            font-size: 12px;
+        }
+
+        .event-item {
+            background: linear-gradient(135deg, #f5f7fa 0%, #e0e7ff 100%);
+            padding: 20px;
+            border-radius: 12px;
+            margin-bottom: 15px;
+            border-left: 4px solid #7e22ce;
+        }
+
+        .event-item h4 {
+            color: #1e3c72;
+            margin-bottom: 8px;
+        }
+
+        .event-date {
+            color: #7e22ce;
+            font-weight: 600;
+            margin-bottom: 5px;
+        }
+
+        .form-group {
+            margin-bottom: 20px;
+        }
+
+        .form-group label {
+            display: block;
+            margin-bottom: 8px;
+            color: #333;
+            font-weight: 600;
+        }
+
+        .form-group input,
+        .form-group select,
+        .form-group textarea {
+            width: 100%;
+            padding: 12px;
+            border: 2px solid #e0e0e0;
+            border-radius: 8px;
+            font-size: 15px;
+            transition: border 0.3s ease;
+        }
+
+        .form-group input:focus,
+        .form-group select:focus,
+        .form-group textarea:focus {
+            outline: none;
+            border-color: #7e22ce;
+        }
+
+        .btn-primary {
+            background: linear-gradient(135deg, #1e3c72 0%, #7e22ce 100%);
+            color: white;
+            padding: 12px 30px;
+            border: none;
+            border-radius: 8px;
+            cursor: pointer;
+            font-size: 16px;
+            font-weight: 600;
+            transition: all 0.3s ease;
+        }
+
+        .btn-primary:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 6px 20px rgba(30, 60, 114, 0.5);
+        }
+
+        @media (max-width: 768px) {
+            .header-content {
+                flex-direction: column;
+                text-align: center;
+            }
+
+            nav {
+                justify-content: center;
+            }
+
+            .nav-btn {
+                flex: 1;
+                min-width: 100px;
+            }
+        }
+    </style>
 </head>
 <body>
-  <div class="container">
-    <header>
-      <div class="brand">
-        <div class="logo">IT</div>
-        <div>
-          <div style="font-weight:800">B.Tech in Information Technology</div>
-          <div class="muted" style="font-size:13px">Department of Computer Science & IT</div>
-        </div>
-      </div>
-
-      <div>
-        <button class="menu-toggle" aria-expanded="false" id="menuToggle">Menu</button>
-        <nav aria-label="Main navigation">
-          <ul id="navList">
-            <li><a href="#about">About</a></li>
-            <li><a href="#programs">Programs</a></li>
-            <li><a href="#curriculum">Curriculum</a></li>
-            <li><a href="#faculty">Faculty</a></li>
-            <li><a href="#admission">Admission</a></li>
-            <li><a class="cta" href="#contact">Apply</a></li>
-          </ul>
-        </nav>
-      </div>
-    </header>
-
-    <main>
-      <section class="hero" id="about">
-        <div>
-          <h1>Bachelor of Technology (B.Tech) in Information Technology</h1>
-          <p>Prepare for a fast-paced career designing, building, and securing modern information systems. Our B.Tech in IT blends software engineering, networking, cybersecurity, data systems, and project-based learning to produce industry-ready graduates.</p>
-
-          <div class="hero-actions">
-            <a class="btn btn-primary" href="#admission">Apply Now</a>
-            <a class="btn btn-outline" href="#curriculum">View Curriculum</a>
-          </div>
-
-          <div style="margin-top:18px;display:flex;gap:12px;flex-wrap:wrap">
-            <div class="card" style="display:inline-block;min-width:160px">
-              <strong>Duration</strong>
-              <div class="muted">4 years (full-time)</div>
+    <div class="container">
+        <header>
+            <div class="header-content">
+                <div class="logo">
+                    <div class="logo-icon">💻</div>
+                    <div>
+                        <h1>BIT Class 2025</h1>
+                        <p>Bachelor of Information Technology</p>
+                    </div>
+                </div>
+                <nav>
+                    <button class="nav-btn active" onclick="showSection('home')">Home</button>
+                    <button class="nav-btn" onclick="showSection('about')">About Us</button>
+                    <button class="nav-btn" onclick="showSection('classmates')">Classmates</button>
+                    <button class="nav-btn" onclick="showSection('projects')">Projects</button>
+                    <button class="nav-btn" onclick="showSection('gallery')">Gallery</button>
+                    <button class="nav-btn" onclick="showSection('events')">Events</button>
+                    <button class="nav-btn" onclick="showSection('contact')">Contact</button>
+                </nav>
             </div>
-            <div class="card" style="display:inline-block;min-width:160px">
-              <strong>Mode</strong>
-              <div class="muted">On-campus / Hybrid</div>
+        </header>
+
+        <div class="content">
+            <!-- Home Section -->
+            <div id="home" class="section active">
+                <div class="hero-section">
+                    <h2>Welcome to BIT Class 2025! 🎓</h2>
+                    <img src="../images/gettyimages-613088734-612x612.jpg" alt="Our Class">
+                    <p style="font-size: 18px; color: #555; margin-top: 20px;">
+                        We are a dynamic group of future IT professionals passionate about technology, innovation, and making a difference!
+                    </p>
+                </div>
+
+                <div class="stats-grid">
+                    <div class="stat-card">
+                        <h3>35</h3>
+                        <p>Class Members</p>
+                    </div>
+                    <div class="stat-card">
+                        <h3>12</h3>
+                        <p>Group Projects</p>
+                    </div>
+                    <div class="stat-card">
+                        <h3>8</h3>
+                        <p>Semesters</p>
+                    </div>
+                    <div class="stat-card">
+                        <h3>3.7</h3>
+                        <p>Average GPA</p>
+                    </div>
+                </div>
+
+                <div class="card-grid">
+                    <div class="card">
+                        <h3>🚀 Innovation First</h3>
+                        <p>We focus on cutting-edge technologies and innovative solutions to real-world problems.</p>
+                    </div>
+                    <div class="card">
+                        <h3>🤝 Teamwork</h3>
+                        <p>Collaboration and peer learning are at the heart of everything we do.</p>
+                    </div>
+                    <div class="card">
+                        <h3>💡 Creative Thinking</h3>
+                        <p>We encourage out-of-the-box thinking and creative problem-solving approaches.</p>
+                    </div>
+                    <div class="card">
+                        <h3>🎯 Career Ready</h3>
+                        <p>Preparing ourselves for successful careers in the tech industry.</p>
+                    </div>
+                </div>
             </div>
-            <div class="card" style="display:inline-block;min-width:160px">
-              <strong>Intake</strong>
-              <div class="muted">September & February</div>
+
+            <!-- About Us Section -->
+            <div id="about" class="section">
+                <h2>About Our Class</h2>
+                 <img src="../images/gettyimages-613088734-612x612.jpg" alt="Study Group" style="width: 100%; max-width: 800px; height: 400px; object-fit: cover; border-radius: 15px; margin: 20px 0; display: block; margin-left: auto; margin-right: auto;">
+                
+                <p style="font-size: 16px; line-height: 1.8; color: #555; margin: 20px 0;">
+                    We are the Bachelor of Information Technology Class of 2025, a diverse and talented group of students pursuing our passion for technology and innovation. Our journey began in 2021, and throughout these years, we've grown not just as students, but as a tight-knit community of future tech professionals.
+                </p>
+
+                <div class="card-grid" style="margin-top: 30px;">
+                    <div class="card">
+                        <h3>📚 Our Curriculum</h3>
+                        <p>We study various aspects of IT including Software Development, Database Management, Networking, Cybersecurity, Web Technologies, Mobile Development, and Cloud Computing.</p>
+                    </div>
+                    <div class="card">
+                        <h3>🏆 Achievements</h3>
+                        <p>Our class has won multiple hackathons, coding competitions, and has been recognized for outstanding academic performance and innovative projects.</p>
+                    </div>
+                    <div class="card">
+                        <h3>🌟 Our Vision</h3>
+                        <p>To become industry leaders and innovators who create technology solutions that make a positive impact on society and drive digital transformation.</p>
+                    </div>
+                    <div class="card">
+                        <h3>🤖 Skills We Master</h3>
+                        <p>Programming, Web Development, Data Science, AI/ML, Cloud Computing, DevOps, Mobile Development, UI/UX Design, and Project Management.</p>
+                    </div>
+                </div>
             </div>
-          </div>
-        </div>
 
-        <div>
-          <img alt="IT illustration" src="data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='520' height='320'><rect width='100%' height='100%' fill='%23eef2ff'/><g transform='translate(30,20)'><rect x='0' y='0' rx='16' ry='16' width='460' height='280' fill='%23fff' stroke='%23e2e8f0'/><text x='28' y='48' font-size='20' fill='%237c3aed' font-family='Arial' font-weight='700'>Build the future with code</text><text x='28' y='86' font-size='14' fill='%23334755'>Software — Networks — Security — Data</text></g></svg>" style="max-width:100%;border-radius:12px;box-shadow:0 10px 30px rgba(2,6,23,0.06)" />
-        </div>
-      </section>
-
-      <section id="programs" class="grid" style="margin-top:22px">
-        <h2>Core Program Tracks</h2>
-        <div class="cards">
-          <article class="card">
-            <h3>Software Engineering</h3>
-            <p class="muted">Programming, software design, testing, DevOps, and cloud-native development.</p>
-          </article>
-          <article class="card">
-            <h3>Network & Systems</h3>
-            <p class="muted">Network design, administration, virtualization, and distributed systems.</p>
-          </article>
-          <article class="card">
-            <h3>Cybersecurity</h3>
-            <p class="muted">Security fundamentals, cryptography, forensics, and secure development practices.</p>
-          </article>
-          <article class="card">
-            <h3>Data & AI</h3>
-            <p class="muted">Databases, analytics, machine learning, and data engineering.</p>
-          </article>
-        </div>
-      </section>
-
-      <section id="curriculum" style="margin-top:26px">
-        <h2>Sample Curriculum</h2>
-        <div class="card curriculum">
-          <h3>Year 1</h3>
-          <ul>
-            <li>Introduction to Programming</li>
-            <li>Discrete Mathematics</li>
-            <li>Computer Systems & Architecture</li>
-            <li>Calculus & Statistics</li>
-            <li>Communication Skills</li>
-          </ul>
-
-          <h3>Year 2</h3>
-          <ul>
-            <li>Data Structures & Algorithms</li>
-            <li>Database Systems</li>
-            <li>Operating Systems</li>
-            <li>Computer Networks</li>
-            <li>Object-Oriented Design</li>
-          </ul>
-
-          <h3>Year 3</h3>
-          <ul>
-            <li>Software Engineering Project I</li>
-            <li>Web & Mobile Development</li>
-            <li>Cybersecurity Fundamentals</li>
-            <li>Machine Learning Basics</li>
-            <li>Electives / Internship</li>
-          </ul>
-
-          <h3>Year 4</h3>
-          <ul>
-            <li>Capstone Project</li>
-            <li>Advanced Topics (Cloud, Big Data, Security)</li>
-            <li>Professional Practice & Ethics</li>
-            <li>Industry Placement / Final Internship</li>
-          </ul>
-        </div>
-      </section>
-
-      <section id="faculty" style="margin-top:26px">
-        <h2>Faculty & Mentors</h2>
-        <div class="faculty">
-          <div class="card">
-            <div style="display:flex;gap:12px;align-items:center">
-              <div class="avatar">AS</div>
-              <div>
-                <strong>Dr. A. Sen</strong>
-                <div class="muted">Head of Department — Networks & Systems</div>
-              </div>
+            <!-- Classmates Section -->
+            <div id="classmates" class="section">
+                <h2>Our Amazing Classmates</h2>
+                <div class="card-grid">
+                    <div class="student-card">
+                        <img src="https://via.placeholder.com/150/1e3c72/ffffff?text=JA" alt="Student">
+                        <h4>John Anderson</h4>
+                        <p>Full Stack Developer</p>
+                        <p>📧 john.a@email.com</p>
+                    </div>
+                    <div class="student-card">
+                        <img src="https://via.placeholder.com/150/7e22ce/ffffff?text=SM" alt="Student">
+                        <h4>Sarah Mitchell</h4>
+                        <p>UI/UX Designer</p>
+                        <p>📧 sarah.m@email.com</p>
+                    </div>
+                    <div class="student-card">
+                        <img src="https://via.placeholder.com/150/1e3c72/ffffff?text=MC" alt="Student">
+                        <h4>Michael Chen</h4>
+                        <p>Data Scientist</p>
+                        <p>📧 michael.c@email.com</p>
+                    </div>
+                    <div class="student-card">
+                        <img src="https://via.placeholder.com/150/7e22ce/ffffff?text=ER" alt="Student">
+                        <h4>Emily Rodriguez</h4>
+                        <p>Cybersecurity Specialist</p>
+                        <p>📧 emily.r@email.com</p>
+                    </div>
+                    <div class="student-card">
+                        <img src="https://via.placeholder.com/150/1e3c72/ffffff?text=DK" alt="Student">
+                        <h4>David Kim</h4>
+                        <p>Cloud Engineer</p>
+                        <p>📧 david.k@email.com</p>
+                    </div>
+                    <div class="student-card">
+                        <img src="https://via.placeholder.com/150/7e22ce/ffffff?text=JT" alt="Student">
+                        <h4>Jessica Taylor</h4>
+                        <p>Mobile Developer</p>
+                        <p>📧 jessica.t@email.com</p>
+                    </div>
+                </div>
             </div>
-            <p class="muted" style="margin-top:12px">Research: Distributed systems, edge computing. Email: asen@example.edu</p>
-          </div>
 
-          <div class="card">
-            <div style="display:flex;gap:12px;align-items:center">
-              <div class="avatar">RK</div>
-              <div>
-                <strong>Prof. R. Kumar</strong>
-                <div class="muted">Software Engineering</div>
-              </div>
+            <!-- Projects Section -->
+            <div id="projects" class="section">
+                <h2>Our Amazing Projects</h2>
+                
+                <div class="project-card">
+                    <h3>🏥 Healthcare Management System</h3>
+                    <p>A comprehensive web application for managing patient records, appointments, and medical staff. Features include real-time notifications, secure data encryption, and responsive design.</p>
+                    <div class="tech-stack">
+                        <span class="tech-badge">React</span>
+                        <span class="tech-badge">Node.js</span>
+                        <span class="tech-badge">MongoDB</span>
+                        <span class="tech-badge">Express</span>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <h3>🛒 E-Commerce Platform</h3>
+                    <p>Full-featured online shopping platform with payment integration, inventory management, and AI-powered product recommendations.</p>
+                    <div class="tech-stack">
+                        <span class="tech-badge">Vue.js</span>
+                        <span class="tech-badge">Python</span>
+                        <span class="tech-badge">PostgreSQL</span>
+                        <span class="tech-badge">Stripe API</span>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <h3>📱 Campus Connect Mobile App</h3>
+                    <p>A social networking app specifically designed for university students to connect, share resources, and collaborate on projects.</p>
+                    <div class="tech-stack">
+                        <span class="tech-badge">React Native</span>
+                        <span class="tech-badge">Firebase</span>
+                        <span class="tech-badge">Redux</span>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <h3>🤖 AI Chatbot Assistant</h3>
+                    <p>An intelligent chatbot powered by machine learning to provide customer support and answer frequently asked questions.</p>
+                    <div class="tech-stack">
+                        <span class="tech-badge">Python</span>
+                        <span class="tech-badge">TensorFlow</span>
+                        <span class="tech-badge">NLP</span>
+                        <span class="tech-badge">Flask</span>
+                    </div>
+                </div>
             </div>
-            <p class="muted" style="margin-top:12px">Research: Software reliability, DevOps. Email: rkumar@example.edu</p>
-          </div>
 
-          <div class="card">
-            <div style="display:flex;gap:12px;align-items:center">
-              <div class="avatar">LM</div>
-              <div>
-                <strong>Ms. L. Mubiru</strong>
-                <div class="muted">Cybersecurity Lecturer</div>
-              </div>
+            <!-- Gallery Section -->
+            <div id="gallery" class="section">
+                <h2>Class Memories 📸</h2>
+                <div class="gallery">
+                    <div class="gallery-item">
+                        <img src="../images/gettyimages-157524214-612x612.jpg" alt="Team Work">
+                        <div class="gallery-caption">Team Collaboration Session</div>
+                    </div>
+                    <div class="gallery-item">
+                        <img src="../images/gettyimages-613088734-612x612.jpg" alt="Presentation">
+                        <div class="gallery-caption">Project Presentation Day</div>
+                    </div>
+                    <div class="gallery-item">
+                        <img src="../images/gettyimages-2180911895-612x612.jpg" alt="Study">
+                        <div class="gallery-caption">Late Night Study Session</div>
+                    </div>
+                    <div class="gallery-item">
+                        <img src="../images/premium_photo-1661347828110-435a158faa8e.avif" alt="Hackathon">
+                        <div class="gallery-caption">Hackathon Winners 2024</div>
+                    </div>
+                    <div class="gallery-item">
+                        <img src="../images/premium_photo-1664908301258-967343633ed1.avif" alt="Celebration">
+                        <div class="gallery-caption">Semester End Celebration</div>
+                    </div>
+                    <div class="gallery-item">
+                        <img src="../images/gettyimages-2241077131-612x612.jpg" alt="Workshop">
+                        <div class="gallery-caption">Tech Workshop 2024</div>
+                    </div>
+                </div>
             </div>
-            <p class="muted" style="margin-top:12px">Focus: Security education and student competitions. Email: lmubiru@example.edu</p>
-          </div>
+
+            <!-- Events Section -->
+            <div id="events" class="section">
+                <h2>Upcoming Events & Activities</h2>
+                
+                <div class="event-item">
+                    <div class="event-date">📅 December 10, 2025</div>
+                    <h4>Final Year Project Presentations</h4>
+                    <p>All teams will present their capstone projects to faculty and industry experts. Join us in the main auditorium at 9:00 AM.</p>
+                </div>
+
+                <div class="event-item">
+                    <div class="event-date">📅 December 15, 2025</div>
+                    <h4>Coding Competition</h4>
+                    <p>Inter-class programming competition with exciting prizes. Test your algorithms and problem-solving skills!</p>
+                </div>
+
+                <div class="event-item">
+                    <div class="event-date">📅 December 20, 2025</div>
+                    <h4>Tech Talk: Industry Insights</h4>
+                    <p>Guest speaker from Google will share insights about career opportunities and latest trends in software engineering.</p>
+                </div>
+
+                <div class="event-item">
+                    <div class="event-date">📅 January 5, 2026</div>
+                    <h4>Class Reunion & Networking</h4>
+                    <p>Annual class get-together with alumni sharing their career experiences and networking opportunities.</p>
+                </div>
+
+                <div class="event-item">
+                    <div class="event-date">📅 January 12, 2026</div>
+                    <h4>Hackathon 2026</h4>
+                    <p>24-hour coding marathon to build innovative solutions. Form your teams and register now!</p>
+                </div>
+            </div>
+
+            <!-- Contact Section -->
+            <div id="contact" class="section">
+                <h2>Get In Touch</h2>
+                
+                <div class="card-grid">
+                    <div class="card">
+                        <h3>📧 Class Email</h3>
+                        <p>bit2025@university.edu</p>
+                    </div>
+                    <div class="card">
+                        <h3>👥 WhatsApp Group</h3>
+                        <p>Join our class group for updates and discussions</p>
+                    </div>
+                    <div class="card">
+                        <h3>💼 LinkedIn</h3>
+                        <p>Connect with us on LinkedIn: BIT Class 2025</p>
+                    </div>
+                    <div class="card">
+                        <h3>📱 Social Media</h3>
+                        <p>Follow us on Instagram & Twitter @BITClass2025</p>
+                    </div>
+                </div>
+
+                <form onsubmit="handleContact(event)" style="margin-top: 30px;">
+                    <h3 style="color: #1e3c72; margin-bottom: 20px;">Send us a Message</h3>
+                    <div class="form-group">
+                        <label>Your Name *</label>
+                        <input type="text" required placeholder="Enter your name">
+                    </div>
+                    <div class="form-group">
+                        <label>Email *</label>
+                        <input type="email" required placeholder="your.email@example.com">
+                    </div>
+                    <div class="form-group">
+                        <label>Subject *</label>
+                        <input type="text" required placeholder="Message subject">
+                    </div>
+                    <div class="form-group">
+                        <label>Message *</label>
+                        <textarea rows="5" required placeholder="Write your message here..."></textarea>
+                    </div>
+                    <button type="submit" class="btn-primary">Send Message</button>
+                </form>
+            </div>
         </div>
-      </section>
+    </div>
 
-      <section id="admission" style="margin-top:26px">
-        <h2>Admission & How to Apply</h2>
-        <div class="card">
-          <p class="muted">Eligibility: High school diploma with strong mathematics; specific country/institution requirements may apply. International students should check visa and language requirements.</p>
-          <ol>
-            <li>Prepare transcripts, CV, and a statement of purpose.</li>
-            <li>Submit the online application and pay the application fee.</li>
-            <li>Attend interview (if required) and provide references.</li>
-            <li>Receive offer and confirm enrollment before the deadline.</li>
-          </ol>
-          <p class="muted"><strong>Scholarships:</strong> Merit- and need-based scholarships are available — check the scholarships page for details.</p>
-        </div>
-      </section>
+    <script>
+        function showSection(sectionId) {
+            const sections = document.querySelectorAll('.section');
+            sections.forEach(section => {
+                section.classList.remove('active');
+            });
+            
+            const buttons = document.querySelectorAll('.nav-btn');
+            buttons.forEach(btn => {
+                btn.classList.remove('active');
+            });
+            
+            document.getElementById(sectionId).classList.add('active');
+            event.target.classList.add('active');
+        }
 
-      <section id="contact" style="margin-top:26px">
-        <h2>Contact & Enquiries</h2>
-        <div style="display:grid;grid-template-columns:1fr 340px;gap:18px}">
-          <div class="card">
-            <h3>Get in touch</h3>
-            <p class="muted">For program enquiries, admissions, and industry partnerships please contact the department office.</p>
-            <p><strong>Office:</strong> Room 212, Tech Building</p>
-            <p><strong>Email:</strong> it-dept@example.edu</p>
-            <p><strong>Phone:</strong> +250 123 456 789</p>
-          </div>
-
-          <div class="card">
-            <h3>Apply / Ask a Question</h3>
-            <form onsubmit="event.preventDefault();alert('Thank you — we received your message!')">
-              <input type="text" name="name" placeholder="Full name" required />
-              <input type="email" name="email" placeholder="Email address" required />
-              <select name="inquiry">
-                <option>General enquiry</option>
-                <option>Admission</option>
-                <option>Scholarships</option>
-                <option>Industry partnership</option>
-              </select>
-              <textarea name="message" placeholder="Your message"></textarea>
-              <button type="submit" class="btn btn-primary">Send message</button>
-            </form>
-          </div>
-        </div>
-      </section>
-    </main>
-
-    <footer>
-      <div style="display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap">
-        <div>
-          <strong>B.Tech in IT</strong>
-          <div class="muted">Department of Computer Science & IT — Empowering the next generation of technologists.</div>
-        </div>
-        <div class="muted">© <span id="year"></span> Department of IT</div>
-      </div>
-    </footer>
-  </div>
-
-  <script>
-    // set year
-    document.getElementById('year').textContent = new Date().getFullYear();
-
-    // simple mobile menu toggle
-    const toggle = document.getElementById('menuToggle');
-    const navList = document.getElementById('navList');
-    toggle?.addEventListener('click', ()=>{
-      const expanded = toggle.getAttribute('aria-expanded') === 'true';
-      toggle.setAttribute('aria-expanded', String(!expanded));
-      if(navList.style.display === 'block') navList.style.display = '';
-      else navList.style.display = 'block';
-    });
-  </script>
+        function handleContact(event) {
+            event.preventDefault();
+            alert('Thank you for your message! We will get back to you soon.');
+            event.target.reset();
+        }
+    </script>
 </body>
 </html>
