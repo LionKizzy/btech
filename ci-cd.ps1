@@ -6,7 +6,7 @@
 $ErrorActionPreference = "Stop"
 
 # -----------------------------------
-# 1. Ensure Minikube is Running  123
+# 1. Ensure Minikube is Running  1234
 # -----------------------------------
 
 Write-Host "Checking Minikube status..." -ForegroundColor Cyan
