@@ -389,11 +389,10 @@
                 </div>
                 <nav>
                     <button class="nav-btn active" onclick="showSection('home')">Home</button>
-                    <button class="nav-btn" onclick="showSection('about')">About Us</button>
+                    <button class="nav-btn" onclick="showSection('modules')">Modules</button>
                     <button class="nav-btn" onclick="showSection('classmates')">Classmates</button>
                     <button class="nav-btn" onclick="showSection('projects')">Projects</button>
                     <button class="nav-btn" onclick="showSection('gallery')">Gallery</button>
-            
                     <button class="nav-btn" onclick="showSection('contact')">Contact</button>
                 </nav>
             </div>
@@ -423,7 +422,6 @@
                         <h3>2</h3>
                         <p>Semesters</p>
                     </div>
-                    
                 </div>
 
                 <div class="card-grid">
@@ -446,31 +444,109 @@
                 </div>
             </div>
 
-            <!-- About Us Section -->
-            <div id="about" class="section">
-                <h2>About Our Class</h2>
-                 <img src="../images/gettyimages-613088734-612x612.jpg" alt="Study Group" style="width: 100%; max-width: 800px; height: 400px; object-fit: cover; border-radius: 15px; margin: 20px 0; display: block; margin-left: auto; margin-right: auto;">
-                
+            <!-- Modules Section -->
+            <div id="modules" class="section">
+                <h2>Our Course Modules</h2>
                 <p style="font-size: 16px; line-height: 1.8; color: #555; margin: 20px 0;">
-                    We are the Bachelor of Information Technology Class of 2025, a diverse and talented group of students pursuing our passion for technology and innovation. Our journey began in 2021, and throughout these years, we've grown not just as students, but as a tight-knit community of future tech professionals.
+                    Our Bachelor of Information Technology program covers comprehensive modules designed to prepare us for the modern tech industry. Here are the key modules we study:
                 </p>
 
-                <div class="card-grid" style="margin-top: 30px;">
-                    <div class="card">
-                        <h3>📚 Our Curriculum</h3>
-                        <p>We study various aspects of IT including Software Development, Database Management, Networking, Cybersecurity, Web Technologies, Mobile Development, and Cloud Computing.</p>
+                <div class="project-card">
+                    <h3>💻 Programming Fundamentals</h3>
+                    <p>Introduction to programming concepts, algorithms, data structures, and problem-solving techniques. Covers languages like Python, Java, and C++.</p>
+                    <div class="tech-stack">
+                        <span class="tech-badge">Python</span>
+                        <span class="tech-badge">Java</span>
+                        <span class="tech-badge">C++</span>
+                        <span class="tech-badge">Algorithms</span>
                     </div>
-                    <div class="card">
-                        <h3>🏆 Achievements</h3>
-                        <p>Our class has won multiple hackathons, coding competitions, and has been recognized for outstanding academic performance and innovative projects.</p>
+                </div>
+
+                <div class="project-card">
+                    <h3>🌐 Web Development</h3>
+                    <p>Full-stack web development including HTML, CSS, JavaScript, frontend frameworks, backend development, and RESTful APIs.</p>
+                    <div class="tech-stack">
+                        <span class="tech-badge">HTML/CSS</span>
+                        <span class="tech-badge">JavaScript</span>
+                        <span class="tech-badge">React</span>
+                        <span class="tech-badge">Node.js</span>
                     </div>
-                    <div class="card">
-                        <h3>🌟 Our Vision</h3>
-                        <p>To become industry leaders and innovators who create technology solutions that make a positive impact on society and drive digital transformation.</p>
+                </div>
+
+                <div class="project-card">
+                    <h3>🗄️ Database Management Systems</h3>
+                    <p>Relational and NoSQL databases, SQL programming, database design, normalization, and data modeling.</p>
+                    <div class="tech-stack">
+                        <span class="tech-badge">SQL</span>
+                        <span class="tech-badge">MySQL</span>
+                        <span class="tech-badge">MongoDB</span>
+                        <span class="tech-badge">PostgreSQL</span>
                     </div>
-                    <div class="card">
-                        <h3>🤖 Skills We Master</h3>
-                        <p>Programming, Web Development, Data Science, AI/ML, Cloud Computing, DevOps, Mobile Development, UI/UX Design, and Project Management.</p>
+                </div>
+
+                <div class="project-card">
+                    <h3>🔒 Cybersecurity</h3>
+                    <p>Network security, cryptography, ethical hacking, security protocols, and risk management strategies.</p>
+                    <div class="tech-stack">
+                        <span class="tech-badge">Network Security</span>
+                        <span class="tech-badge">Cryptography</span>
+                        <span class="tech-badge">Penetration Testing</span>
+                        <span class="tech-badge">Security Protocols</span>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <h3>📱 Mobile Application Development</h3>
+                    <p>iOS and Android app development, cross-platform frameworks, mobile UI/UX design, and app deployment.</p>
+                    <div class="tech-stack">
+                        <span class="tech-badge">React Native</span>
+                        <span class="tech-badge">Flutter</span>
+                        <span class="tech-badge">Swift</span>
+                        <span class="tech-badge">Kotlin</span>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <h3>☁️ Cloud Computing</h3>
+                    <p>Cloud platforms, virtualization, containerization, serverless computing, and cloud architecture design.</p>
+                    <div class="tech-stack">
+                        <span class="tech-badge">AWS</span>
+                        <span class="tech-badge">Azure</span>
+                        <span class="tech-badge">Docker</span>
+                        <span class="tech-badge">Kubernetes</span>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <h3>🤖 Artificial Intelligence & Machine Learning</h3>
+                    <p>Machine learning algorithms, neural networks, deep learning, natural language processing, and AI applications.</p>
+                    <div class="tech-stack">
+                        <span class="tech-badge">TensorFlow</span>
+                        <span class="tech-badge">PyTorch</span>
+                        <span class="tech-badge">Scikit-learn</span>
+                        <span class="tech-badge">NLP</span>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <h3>🌐 Computer Networks</h3>
+                    <p>Network protocols, TCP/IP, routing, switching, network design, and wireless technologies.</p>
+                    <div class="tech-stack">
+                        <span class="tech-badge">TCP/IP</span>
+                        <span class="tech-badge">Cisco</span>
+                        <span class="tech-badge">Network Design</span>
+                        <span class="tech-badge">Protocols</span>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <h3>📊 Software Engineering</h3>
+                    <p>Software development lifecycle, Agile methodologies, project management, version control, and software testing.</p>
+                    <div class="tech-stack">
+                        <span class="tech-badge">Agile</span>
+                        <span class="tech-badge">Git</span>
+                        <span class="tech-badge">SDLC</span>
+                        <span class="tech-badge">Testing</span>
                     </div>
                 </div>
             </div>
@@ -480,13 +556,11 @@
                 <h2>Our Amazing Classmates</h2>
                 <div class="card-grid">
                     <div class="student-card">
-                        <!-- <img src="https://via.placeholder.com/150/1e3c72/ffffff?text=JA" alt="Student"> -->
                         <h4>NIYONSABA Parfaite</h4>
                         <p>Full Stack Developer</p>
                         <p>25RP19796</p>
                     </div>
                     <div class="student-card">
-                        <!-- <img src="https://via.placeholder.com/150/7e22ce/ffffff?text=SM" alt="Student"> -->
                         <h4>SHIKAMUSENGE Philemon</h4>
                         <p>UI/UX Designer</p>
                         <p>25RP19947</p>
@@ -498,19 +572,16 @@
                         <p>25RP20637</p>
                     </div>
                     <div class="student-card">
-                        <!-- <img src="https://via.placeholder.com/150/7e22ce/ffffff?text=ER" alt="Student"> -->
                         <h4>Sugira Pacifique</h4>
                         <p>Cybersecurity Specialist</p>
                         <p>25RP18092</p>
                     </div>
                     <div class="student-card">
-                        <!-- <img src="https://via.placeholder.com/150/1e3c72/ffffff?text=DK" alt="Student"> -->
                         <h4>NTAKIRUTIMANA Sabin</h4>
                         <p>Cloud Engineer</p>
                         <p>25RP19947</p>
                     </div>
                     <div class="student-card">
-                        <!-- <img src="https://via.placeholder.com/150/7e22ce/ffffff?text=JT" alt="Student"> -->
                         <h4>CYUZUZO Corneille</h4>
                         <p>Mobile Developer</p>
                         <p>25RP18892</p>
@@ -594,41 +665,6 @@
                         <img src="../images/gettyimages-2241077131-612x612.jpg" alt="Workshop">
                         <div class="gallery-caption">Tech Workshop 2024</div>
                     </div>
-                </div>
-            </div>
-
-            <!-- Events Section -->
-            <div id="events" class="section">
-                <h2>Upcoming Events & Activities</h2>
-                
-                <div class="event-item">
-                    <div class="event-date">📅 December 10, 2025</div>
-                    <h4>Final Year Project Presentations</h4>
-                    <p>All teams will present their capstone projects to faculty and industry experts. Join us in the main auditorium at 9:00 AM.</p>
-                </div>
-
-                <div class="event-item">
-                    <div class="event-date">📅 December 15, 2025</div>
-                    <h4>Coding Competition</h4>
-                    <p>Inter-class programming competition with exciting prizes. Test your algorithms and problem-solving skills!</p>
-                </div>
-
-                <div class="event-item">
-                    <div class="event-date">📅 December 20, 2025</div>
-                    <h4>Tech Talk: Industry Insights</h4>
-                    <p>Guest speaker from Google will share insights about career opportunities and latest trends in software engineering.</p>
-                </div>
-
-                <div class="event-item">
-                    <div class="event-date">📅 January 5, 2026</div>
-                    <h4>Class Reunion & Networking</h4>
-                    <p>Annual class get-together with alumni sharing their career experiences and networking opportunities.</p>
-                </div>
-
-                <div class="event-item">
-                    <div class="event-date">📅 January 12, 2026</div>
-                    <h4>Hackathon 2026</h4>
-                    <p>24-hour coding marathon to build innovative solutions. Form your teams and register now!</p>
                 </div>
             </div>
 
