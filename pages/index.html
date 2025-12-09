@@ -202,30 +202,110 @@
         }
 
         .student-card {
-            background: white;
-            padding: 20px;
-            border-radius: 12px;
-            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+            background: linear-gradient(135deg, #ffffff 0%, #f8f9ff 100%);
+            padding: 30px 25px;
+            border-radius: 16px;
+            box-shadow: 0 8px 25px rgba(30, 60, 114, 0.12);
             text-align: center;
+            transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+            border: 2px solid rgba(126, 34, 206, 0.1);
+            position: relative;
+            overflow: hidden;
+        }
+
+        .student-card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 4px;
+            background: linear-gradient(90deg, #1e3c72 0%, #7e22ce 100%);
+            transform: scaleX(0);
+            transition: transform 0.4s ease;
+        }
+
+        .student-card:hover::before {
+            transform: scaleX(1);
+        }
+
+        .student-card:hover {
+            transform: translateY(-8px);
+            box-shadow: 0 12px 35px rgba(30, 60, 114, 0.2);
+            border-color: rgba(126, 34, 206, 0.3);
+        }
+
+        .student-avatar {
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+            background: linear-gradient(135deg, #1e3c72 0%, #7e22ce 100%);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 0 auto 20px;
+            font-size: 36px;
+            font-weight: 700;
+            color: white;
+            box-shadow: 0 4px 15px rgba(126, 34, 206, 0.3);
+            transition: all 0.3s ease;
+        }
+
+        .student-card:hover .student-avatar {
+            transform: scale(1.1) rotate(5deg);
+            box-shadow: 0 6px 20px rgba(126, 34, 206, 0.4);
         }
 
         .student-card img {
-            width: 120px;
-            height: 120px;
+            width: 100px;
+            height: 100px;
             border-radius: 50%;
             object-fit: cover;
-            margin-bottom: 15px;
+            margin: 0 auto 20px;
             border: 4px solid #7e22ce;
+            box-shadow: 0 4px 15px rgba(126, 34, 206, 0.3);
+            transition: all 0.3s ease;
+            display: block;
+        }
+
+        .student-card:hover img {
+            transform: scale(1.1);
+            border-color: #1e3c72;
         }
 
         .student-card h4 {
             color: #1e3c72;
-            margin-bottom: 5px;
+            margin-bottom: 8px;
+            font-size: 18px;
+            font-weight: 700;
+            letter-spacing: 0.3px;
         }
 
-        .student-card p {
-            color: #666;
+        .student-role {
+            color: #7e22ce;
             font-size: 14px;
+            font-weight: 600;
+            margin-bottom: 8px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 6px;
+        }
+
+        .student-role::before {
+            content: '💼';
+            font-size: 16px;
+        }
+
+        .student-id {
+            color: #888;
+            font-size: 13px;
+            font-weight: 500;
+            background: rgba(126, 34, 206, 0.08);
+            padding: 6px 14px;
+            border-radius: 20px;
+            display: inline-block;
+            margin-top: 5px;
         }
 
         .gallery {
@@ -554,37 +634,45 @@
             <!-- Classmates Section -->
             <div id="classmates" class="section">
                 <h2>Our Amazing Classmates</h2>
+                <p style="font-size: 16px; line-height: 1.8; color: #555; margin: 0 0 30px 0; text-align: center;">
+                    Meet the talented individuals who make up our BIT Class of 2025. Each member brings unique skills and passion to our community.
+                </p>
                 <div class="card-grid">
                     <div class="student-card">
+                        <div class="student-avatar">NP</div>
                         <h4>NIYONSABA Parfaite</h4>
-                        <p>Full Stack Developer</p>
-                        <p>25RP19796</p>
+                        <p class="student-role">Full Stack Developer</p>
+                        <span class="student-id">25RP19796</span>
                     </div>
                     <div class="student-card">
+                        <div class="student-avatar">SP</div>
                         <h4>SHIKAMUSENGE Philemon</h4>
-                        <p>UI/UX Designer</p>
-                        <p>25RP19947</p>
+                        <p class="student-role">UI/UX Designer</p>
+                        <span class="student-id">25RP19947</span>
                     </div>
                     <div class="student-card">
-                        <img src="https://via.placeholder.com/150/1e3c72/ffffff?text=MC" alt="Student">
-                        <h4>Hogoza Peace</h4>
-                        <p>Data Scientist</p>
-                        <p>25RP20637</p>
+                        <div class="student-avatar">HP</div>
+                        <h4>HOGOZA Peace</h4>
+                        <p class="student-role">Data Scientist</p>
+                        <span class="student-id">25RP20637</span>
                     </div>
                     <div class="student-card">
-                        <h4>Sugira Pacifique</h4>
-                        <p>Cybersecurity Specialist</p>
-                        <p>25RP18092</p>
+                        <div class="student-avatar">SP</div>
+                        <h4>SUGIRA Pacifique</h4>
+                        <p class="student-role">Cybersecurity Specialist</p>
+                        <span class="student-id">25RP18092</span>
                     </div>
                     <div class="student-card">
+                        <div class="student-avatar">NS</div>
                         <h4>NTAKIRUTIMANA Sabin</h4>
-                        <p>Cloud Engineer</p>
-                        <p>25RP19947</p>
+                        <p class="student-role">Cloud Engineer</p>
+                        <span class="student-id">25RP19947</span>
                     </div>
                     <div class="student-card">
+                        <div class="student-avatar">CC</div>
                         <h4>CYUZUZO Corneille</h4>
-                        <p>Mobile Developer</p>
-                        <p>25RP18892</p>
+                        <p class="student-role">Mobile Developer</p>
+                        <span class="student-id">25RP18892</span>
                     </div>
                 </div>
             </div>
@@ -605,8 +693,8 @@
                 </div>
 
                 <div class="project-card">
-                    <h3>🛒 E-Commerce Platform</h3>
-                    <p>Full-featured online shopping platform with payment integration, inventory management, and AI-powered product recommendations.</p>
+                    <h3>Fake News Detection</h3>
+                    <p>Full Article News Detectionin Machine Learning.</p>
                     <div class="tech-stack">
                         <span class="tech-badge">Vue.js</span>
                         <span class="tech-badge">Python</span>
@@ -655,7 +743,7 @@
                     </div>
                     <div class="gallery-item">
                         <img src="../images/premium_photo-1661347828110-435a158faa8e.avif" alt="Hackathon">
-                        <div class="gallery-caption">Hackathon Winners 2024</div>
+                        <div class="gallery-caption">Class session</div>
                     </div>
                     <div class="gallery-item">
                         <img src="../images/premium_photo-1664908301258-967343633ed1.avif" alt="Celebration">
@@ -675,7 +763,7 @@
                 <div class="card-grid">
                     <div class="card">
                         <h3>📧 Class Email</h3>
-                        <p>bit2025@university.edu</p>
+                        <p>bit2025@rp.ac.rw</p>
                     </div>
                     <div class="card">
                         <h3>👥 WhatsApp Group</h3>
@@ -687,7 +775,7 @@
                     </div>
                     <div class="card">
                         <h3>📱 Social Media</h3>
-                        <p>Follow us on Instagram & Twitter @BITClass2025</p>
+                        <p>Follow us on Instagram & Twitter @RPBITClass2025</p>
                     </div>
                 </div>
 
